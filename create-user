@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo echo 'Creating user $1...'
+cd /etc/openvpn/easy-rsa
+sudo ./easyrsa build-client-full $1 nopass
